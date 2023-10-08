@@ -30,7 +30,7 @@ Pixels per Square: 96
 
 | Step  | Visual |
 | ------------- | ------------- |
-| <p align="center">Board detection is achieved through the use of image manipulation with OpenCV.</p>  | ![Chessboard1](./README_Imgs/chessboard1.png?raw=true "Title")  |
+| <p align="center">Board detection is achieved through the use of image manipulation with [OpenCV](https://opencv.org/).</p>  | ![Chessboard1](./README_Imgs/chessboard1.png?raw=true "Title")  |
 | <p align="center">Using ```cv2.Canny()``` filters the edges of the image, allowing for later use of ```cv2.getStructuringElement()``` and ```cv2.erode()``` to extract horizontal/vertical lines only.</p>   | ![Chessboard2](./README_Imgs/chessboard2.jpg?raw=true "Title")  |
 | <p align="center">The next step is to combine the two filtered images into one with ```cv2.maximum(img1, img2)```.</p>    | ![Chessboard2](./README_Imgs/chessboard3.jpg?raw=true "Title") |
 | <p align="center">The resultant image now contains only straight and horizontal lines, allowing for contour detection around the vertices of the squares within the image.</p>   | ![Chessboard2](./README_Imgs/chessboard4.jpg?raw=true "Title")  |
