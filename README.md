@@ -1,6 +1,27 @@
 # Chess Board Detection
 This is an algorithm for the detection of square chess boards in images regardless of various pieces on the board, which is a big limitation of ```cv2.findChessboardCorners()```.
 
+## Usage
+Pass the following arguments to detect.py:
+```
+usage: detect.py [-h] [-f FILENAME] [-s]
+
+Get location of chessboard on screen. Use -f to input filename (default will take a screenshot). Use -s to show result.
+
+options:
+  -h, --help            show this help message and exit
+  -f FILENAME, --filename FILENAME
+                        Input image filename, otherwise screenshot will be taken
+  -s, --show            Show result of detection
+```
+Input filename or a screenshot of screen will be taken. Output should be something like this:
+```
+python detect.py -f ./README_Imgs/chessboard1.png -s
+
+Region: (335, 85, 772, 771)
+Pixels per Square: 96
+```
+
 ## Breakdown
 
 | Step  | Visual |
