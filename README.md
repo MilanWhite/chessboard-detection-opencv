@@ -2,6 +2,10 @@
 This is an algorithm for the detection of square chess boards in images regardless of various pieces on the board, which is a big limitation of ```cv2.findChessboardCorners()```.
 
 ## Usage
+Install requirements
+```
+pip install -r requirements.txt
+```
 Pass the following arguments to detect.py:
 ```
 usage: detect.py [-h] [-f FILENAME] [-s]
